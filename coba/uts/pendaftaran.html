@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Pasien</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>RS Sehat Selalu</h1>
+        <p>Melayani kesehatan masyarakat dengan sepenuh hati</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="katalog.html">Katalog Dokter</a>
+        <a href="pendaftaran.html">Pendaftaran Pasien</a>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>Form Pendaftaran Pasien Rawat Jalan</h2>
+            <!-- Action dikosongkan karena tidak menggunakan database -->
+            <form action="">
+                <!-- type text -->
+                <label>Nama Pasien: </label>
+                <input type="text" name="nama" placeholder="Masukan nama lengkap" required />
+                <br/>
+                
+                <!-- tanggal -->
+                <label>Tanggal Berobat: </label>
+                <input type="date" name="tgl_berobat" required />
+                <br/>
+
+                <!-- radio button -->
+                <table>Jenis Kelamin: </table>
+                <input type="radio" name="gender" value="Laki-Laki">Laki-Laki
+                <input type="radio" name="gender" value="Perempuan">Perempuan
+                <br/>
+                
+                <!-- option drop down -->
+                <label>Poli Tujuan: </label>
+                <select name="poli">
+                    <option value="Poli Umum">Poli Umum</option>
+                    <option value="Poli Gigi">Poli Gigi</option>
+                    <option value="Poli Mata">Poli Mata</option>
+                </select>
+                <br/>
+
+                <!-- check box -->
+                <label>Pilih Metode Pembayaran: </label>
+                <input type="checkbox" name="bayar" value="BPJS" />BPJS
+                <input type="checkbox" name="bayar" value="Umum" />Mandiri/Umum
+                <br/>
+
+                <!-- upload foto -->
+                <label>Upload KTP/KK: </label>
+                <input type="file" name="ktp" />
+                <br/>
+
+                <!-- Text Area -->
+                <label>Keluhan Penyakit: </label><br>
+                <textarea name="keluhan" rows="4" cols="40" placeholder="Tuliskan keluhan yang Anda rasakan"></textarea>
+                <br/>
+
+                <button type="submit">Kirim Pendaftaran</button>
+                <button type="reset">Reset Form</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RS Sehat Selalu.</p>
+    </footer>
+</body>
+</html>

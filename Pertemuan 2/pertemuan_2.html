@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portal Mahasiswa Sistem Informasi</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <h1>Portal Mahasiswa Sistem Informasi</h1>
+            <p>Universitas Pamulang</p>
+        </header>
+
+        <!-- navbar -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profil">Profil</a>
+            <a href="#akademik">Akademik</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+
+        <!-- main -->
+        <main>
+            <!-- profile -->
+            <section id="profil">
+                <h2>Profil Mahasiswa</h2>
+                <img
+                    src="profile.jpg.jpeg"
+                    alt="foto mhs"
+                    style="
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    "
+                />
+                <p>Nama : Malik Fahad</p>
+                <p>NIM : 241091700288</p>
+                <p>Program Studi: Sistem Informasi</p>
+            </section>
+
+            <!-- akademik -->
+            <section id="akademik">
+                <h2>Data Akademik</h2>
+                <table border="1" cellpadding="5" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Mata Kuliah</th>
+                            <th>SKS</th>
+                            <th>Nilai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Pemrograman Web</td>
+                            <td>3</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Basis Data</td>
+                            <td>3</td>
+                            <td>A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- kegiatan mahasiswa -->
+            <section id="kegiatan">
+                <h2>Kegiatan Mahasiswa</h2>
+                <ul>
+                    <li>Seminar Teknologi</li>
+                    <li>Workshop Pemrograman</li>
+                    <li>Organisasi Mahasiswa</li>
+                </ul>
+            </section>
+
+            <!-- kontak -->
+            <section id="kontak">
+                <h2>Kontak</h2>
+                <form>
+                    <label for="nama">Nama:</label><br />
+                    <input type="text" id="nama" /><br /><br />
+
+                    <label for="email">Email:</label><br />
+                    <input type="email" id="email" /><br /><br />
+
+                    <label for="pesan">Pesan:</label><br />
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        rows="4"
+                        cols="30"
+                    ></textarea
+                    ><br /><br />
+
+                    <button type="submit">Kirim</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <p>
+                <small
+                    >&copy; 2026 Sistem Informasi. All Rights Reserved.</small
+                >
+            </p>
+        </footer>
+    </body>
+</html>
